@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CS4241 Assignment 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">About Me</a></li>
+        <li><a href="/hobby" class="selected">Hobby</a></li>
+        <li><a href="https://www.wpi.edu">WPI</a></li>
+        <li><a href="https://www.formula1.com">Formula One</a></li>
+      </ul>
+      <hr />
+    </nav>
+
+    <header>
+      <h1>Formula One</h1>
+      <img src="https://1000logos.net/wp-content/uploads/2021/06/F1-logo.png" height="100px"/>
+    </header>
+
+    <main>
+      <p>Formula One (F1) is the highest class of international single-seater auto racing, governed by the Fédération Internationale de l'Automobile (FIA). It features high-performance race cars designed with cutting-edge technology and engineering. F1 races, known as Grands Prix, take place on circuits and streets around the world, combining speed, strategy, and driver skill. The championship includes both a Constructors' Championship for teams and a Drivers' Championship for individual racers, making it a thrilling mix of teamwork and individual talent.</p>
+      
+      <section>
+        <h4>Tell us about your interests:</h4>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Your Name" name="name"/>
+          </div>
+
+          <div>
+            <label for="team">Favorite Teams:</label>
+            <input type="checkbox" name="team" id="team" value="mercedes">Mercedes</option>
+            <input type="checkbox" name="team" id="team" value="red-bull">Red Bull</input>
+            <input type="checkbox" name="team" id="team" value="mclaren">McLaren</option>
+            <input type="checkbox" name="team" id="team" value="ferrari">Ferrari</option>
+            <input type="checkbox" name="team" id="team" value="williams">Williams</option>
+            <input type="checkbox" name="team" id="team" value="haas">Haas</option>
+            <input type="checkbox" name="team" id="team" value="audi">Audi</option>
+            <input type="checkbox" name="team" id="team" value="vcarb">Visa Cash-App Red Bull</option>
+            <input type="checkbox" name="team" id="team" value="alpine">Alpine</option>
+            <input type="checkbox" name="team" id="team" value="aston-martin">Aston Martin</option>
+          </div>
+
+          <div>
+            <label for="driver">Favorite Driver:</label>
+            <select id="driver" name="driver">
+              <option value="ham">Lewis Hamilton</option>
+              <option value="ver">Max Verstappen</option>
+              <option value="lec">Charles Leclerc</option>
+              <option value="sai">Carlos Sainz</option>
+              <option value="pia">Oscar Piastri</option>
+              <option value="nor">Lando Norris</option>
+              <option value="law">Liam Lawson</option>
+              <option value="rus">George Russell</option>
+              <option value="ant">Kimi Antonelli</option>
+              <option value="str">Lance Stroll</option>
+              <option value="alo">Fernando Alonso</option>
+              <option value="doo">Jack Doohan</option>
+              <option value="had">Jack Hadjar</option>
+              <option value="tsu">Yuki Tsunoda</option>
+              <option value="oco">Esteban Ocon</option
+              <option value="bea">Oliver Bearman</option>
+              <option value="alb">Alexander Albon</option>
+              <option value="hul">Nico Hulkenberg</option>
+              <option value="bor">Gabriel Bortoleto</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="why">Why do you like your teams and driver:</label>
+            <textarea rows="10" cols="25" id="why" placeholder="I like my team because..." name="why"></textarea>
+          </div>
+
+          <div>
+            <label for="age">How old are you:</label>
+            <input type="radio" name="age" value="lt-12" id="age">Less than 12</input>
+            <input type="radio" name="age" value="12-19" id="age">Between 12 and 19</input>
+            <input type="radio" name="age" value="19-21" id="age">Between 19 and 21</input>
+            <input type="radio" name="age" value="21+" id="age">Over 21</input>
+          </div>
+
+          <button type="button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Formula 1 an associated images are copyright Liberty Media Corperation</p>
+    </footer>
+
+  </body>
+</html>

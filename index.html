@@ -2,20 +2,119 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>[Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
+    <nav>
+      <ul>
+        <li><a href="/" class="selected">About Me</a></li>
+        <li><a href="/hobby">Hobby</a></li>
+        <li><a href="https://www.wpi.edu">WPI</a></li>
+        <li><a href="https://www.formula1.com">Formula One</a></li>
+      </ul>
+      <hr />
+    </nav>
 
-      [Courses]
+    <h1 id="name">Ian Wright</h1>
+    <address>
+      <a href="mailto:irwright@wpi.edu">irwright@wpi.edu</a>
+      <a href="https://github.com/landaman">Landaman</a>
+    </address>
+    <p>WPI Class of 2025</p>
+    <p>Computer Science BS/MS</p>
 
-      [Technologies]
-    
+    <ul>
+      <li>CS 1102 (Accel. Intro to Program Design)</li>
+      <li>CS 2103 (Majors Object Oriented)</li>
+      <li>CS 2303 (Majors Systems)</li>
+      <li>CS 3013 (Operating Systems)</li>
+      <li>CS 3431 (Database Systems I)</li>
+      <li>CS 2223 (Algorithms)</li>
+      <li>CS 3516 (Computer Networks)</li>
+      <li>CS 3733 (Software Engineering)</li>
+      <li>CS 4032 (Numerical Methods for Lin. and Non-Lin. Systems)</li>
+      <li>CS 4432 (Database Systems II)</li>
+      <li>CS 4342 (Machine Learning)</li>
+      <li>CS 4123 (Theory of Computation)</li>
+      <li>CS 3043 (Social Imps)</li>
+      <li>CS 509 (Design of Software Systems)</li>
+      <li>CS 585 (Big Data Management)</li>
+      <li>CS 584 (Algorithms: Design and Analysis)</li>
+      <li>CS 513 (Computer Networks)</li>
+      <li>CS 534 (Introduction to Artificial Intelligence)</li>
+      <li>CS 573 (Data Visualization)</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Technology</th>
+          <th>Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>TypeScript</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>MongoDB</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Web Frameworks (ASP.NET, Next.JS, SvelteKit, React SPAs)</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>A lot</td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript">
+      let element = document.getElementById("name");
+      let originalText = element.textContent;
+
+      function advanceEffect() {
+        if (element.textContent === originalText) {
+          return;
+        }
+
+        element.textContent += originalText[element.textContent.length];
+        if (element.textContent[element.textContent.length - 1] === " ") {
+          advanceEffect();
+          return;
+        }
+
+        window.setTimeout(
+          () => window.requestAnimationFrame(advanceEffect),
+          300,
+        );
+      }
+
+      window.requestAnimationFrame(() => {
+        element.textContent = "";
+        advanceEffect();
+      });
+    </script>
   </body>
 </html>
